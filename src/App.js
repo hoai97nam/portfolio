@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import bgImage from "./tapao.jpg";
+import "./App.css";
+import { Header } from "./components/Header";
+import styled from "styled-components";
+import { Summary } from "./components/Summary";
+import { VerticalBar } from "./components/VerticalBar";
 
+const AppStyled = styled.div`
+  /* background-image: url(${bgImage});  */
+  height: 100vh;
+  background-position: center;
+  background-color: yellow;
+  background-repeat: no-repeat;
+`;
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <AppStyled className="font-mono">
+        <Header />
+        <Summary />
+        <VerticalBar />
+      </AppStyled>
   );
 }
 
