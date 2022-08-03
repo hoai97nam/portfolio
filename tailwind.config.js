@@ -8,7 +8,8 @@ module.exports = {
         type: "type 5.8s ease-out .8s 1 normal both",
         "type-reverse": "type 1.8s ease-out 0s infinite alternate-reverse both",
         ff: 'typing 2.5s steps(15, end) infinite',
-        ss: 'blink .75s step-end infinite'
+        ss: 'blink .75s step-end infinite',
+        scroll: 'all 700ms ease'
         
       },
       keyframes: {
@@ -33,6 +34,9 @@ module.exports = {
           'from, to': { 'border-color': 'transparent ' },
           '50%': { 'border-color': 'orange' }
         },
+        transform: {
+          
+        }
 
       },
     },

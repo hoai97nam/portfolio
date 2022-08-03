@@ -57,7 +57,7 @@ export const VerticalBar = () => {
             </svg>
           </a>
         </div>
-        <div className="h-96 w-px bg-black m-auto mt-6"></div>
+        <div className="h-screen w-px bg-black m-auto mt-6"></div>
       </div>
     </div>
   );
